@@ -7,6 +7,7 @@
 
 #include <sp3000.h>
 #include <SPI.h>
+#include <Wire.h>
 
 #if defined(__AVR_ATmega32U4__)  // Pins on LeoFi are fixed
   #define CC3000_MODE      0

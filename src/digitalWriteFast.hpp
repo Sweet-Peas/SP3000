@@ -1,6 +1,3 @@
-#include <arduino.h>
-#include <wiring.h>
-
 //#define __AK2_MEGA__
 
 #define BIT_READ(value, bit) (((value) >> (bit)) & 0x01)
@@ -214,7 +211,7 @@ else pinMode((P), (V)); \
 	do {if (__builtin_constant_p(P) )  __atomicWrite((volatile uint8_t*) __digitalPinToTimer(P),P,0) \
 		else turnOffPWM((P));   \
 } while (0)
-#endif		
+#endif
 
 
 #ifndef digitalReadFast

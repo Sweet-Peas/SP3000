@@ -7,6 +7,7 @@
 
 #include <sp3000.h>   // The Sweet Pea WiFi Library
 #include <SPI.h>      // Required
+#include <Wire.h>     // Required
 
 #if defined(__AVR_ATmega32U4__)  // Pins on LeoFi are fixed
   #define CC3000_MODE      0
@@ -14,6 +15,7 @@
   #define CC3000_EN_PIN    5
   #define CC3000_IRQ_PIN   7
   #define CC3000_IRQ_LEVEL 4
+  #define FEED_ID          <insert your feed id here>
   #define lSer             Serial
 #else
   #define CC3000_MODE      0
